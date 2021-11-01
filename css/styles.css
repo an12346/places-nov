@@ -1,0 +1,33 @@
+.container {
+  padding-top: 45px;
+}
+
+.card {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 15px;
+}
+
+.resultCard {
+  display: none;
+}
+
+/* #joshuaResults {
+  display: none;
+  color: red;
+}
+
+#franciscoResults {
+  display: none;
+  color: orange;
+}
+
+#sedonaResults {
+  display: none;
+  color: lightblue;
+}
+
+#diegoResults {
+  display: none;
+  color: purple;
+} */
