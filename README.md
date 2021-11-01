@@ -55,7 +55,7 @@ Create a website where you can keep track of all the places you've been.
   * landmarks
   * time of year
   * notes
-2. Display those properties when a user clicks on a place's name
+2. UI: Display those properties when a user clicks on a place's name
 - Complete the business logic for your place object
 - (including specs, which should go in your README).
 - If you complete the business logic, you may work on adding a user interface. (See the upcoming lessons for more on adding a UI.)
@@ -93,7 +93,24 @@ Expected Results:
     time: "spring",
     notes: "sunsets are beautiful!" }
 
-Test:
-Code:
 
+Describe: LocationBook()
+
+Test: "It will add a number to each location"
+Code:
+let LocationBook1 = new LocationBook();
+let Location1 = new Location (
+  "Sedona",
+  ["Church of holy cross", "antelope canyon"],
+  "spring",
+  "sunsets are beautiful!"
+);
+LocationBook1.addLocation(Location1);
+<!-- addressBook.addContact(contact1); -->
 Expected Results:
+Location {
+  name: 'Sedona',
+  landmarks: [ 'Church of holy cross', 'antelope canyon' ],
+  time: 'spring',
+  notes: 'sunsets are beautiful!',
+  id: 1 }
