@@ -49,11 +49,51 @@ _https://opensource.org/licenses/MIT_
 ## Problem Analysis
 
 ### Prompt-----
-Create a website where you can keep track of all the places you've been. Each destination should be an object with multiple properties, like location, landmarks, time of year, notes, etc. Display those properties when a user clicks on a place's name. Complete the business logic for your place object (including specs, which should go in your README). If you complete the business logic, you may work on adding a user interface. (See the upcoming lessons for more on adding a UI.)
+Create a website where you can keep track of all the places you've been.
+1. Each destination should be an object with multiple properties:
+  * location
+  * landmarks
+  * time of year
+  * notes
+2. Display those properties when a user clicks on a place's name
+- Complete the business logic for your place object
+- (including specs, which should go in your README).
+- If you complete the business logic, you may work on adding a user interface. (See the upcoming lessons for more on adding a UI.)
 
 ### Analysis-----
-I'll need:
+We'll need:
+Constructors:
+  <!-- * Each of us
+    1. Ella
+    2. Anna -->
+  * Locations
+    - Key Number - number
+    - City Name - string
+    - Landmarks - array
+    - time of year - string
+    - notes - string
 
 
 ## Specs
-Describe: function Name()
+Describe: Location()
+
+Test: "it will return test object with all test properties"
+Code:
+  let testLocation = new Location(
+    "X",
+    "Sedona",
+    ["Church of holy cross", "antelope canyon"],
+    "spring",
+    "sunsets are beautiful!" )
+Expected Results:
+  Location
+  { key: X,
+    name: "Sedona",
+    Landmarks: ["Church of holy cross", "antelope canyon"],
+    time: "spring",
+    notes: "sunsets are beautiful!" }
+
+Test:
+Code:
+
+Expected Results:
